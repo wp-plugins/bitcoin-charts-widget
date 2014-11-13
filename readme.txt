@@ -9,85 +9,90 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Displays bitcoin charts as widget with data from external services.
 
 == Description ==
-This widget displays bitcoin charts with data from different external services. 
-Currently we support blockchain.info. The widget can be customized using the 
-admin backend. Also, you can include the widget using shortcode.
 
-Short code:
+This widget displays bitcoin charts with data from different external services. 
+Currently, the widget supports blockchain.info. 
+
+The widget can be customized using the admin backend. 
+
+Also, you can include the widget using shortcode.
+
+= Short code =
+
 The shortcode is [btcchart style="btc-500x330" chart="trade-volume"]
 
 * chart is one of:
-	total-bitcoins
-	market-cap
-	transaction-fees
-	transaction-fees-usd
-	network-deficit
-	n-transactions
-	n-transactions-total
-	n-transactions-excluding-popular
-	n-unique-addresses
-	n-transactions-per-block
-	n-orphaned-blocks
-	output-volume
-	estimated-transaction-volume
-	estimated-transaction-volume-usd
-	trade-volume
-	market-price
-	cost-per-transaction-percent
-	cost-per-transaction
-	hash-rate
-	difficulty
-	miners-revenue
-	avg-confirmation-time
-	bitcoin-days-destroyed-cumulative
-	bitcoin-days-destroyed
-	bitcoin-days-destroyed-min-week
-	bitcoin-days-destroyed-min-month
-	bitcoin-days-destroyed-min-year
-	blocks-size
-	my-wallet-transaction-volume
-	my-wallet-n-users
-	my-wallet-n-tx
+	* total-bitcoins
+	* market-cap
+	* transaction-fees
+	* transaction-fees-usd
+	* network-deficit
+	* n-transactions
+	* n-transactions-total
+	* n-transactions-excluding-popular
+	* n-unique-addresses
+	* n-transactions-per-block
+	* n-orphaned-blocks
+	* output-volume
+	* estimated-transaction-volume
+	* estimated-transaction-volume-usd
+	* trade-volume
+	* market-price
+	* cost-per-transaction-percent
+	* cost-per-transaction
+	* hash-rate
+	* difficulty
+	* miners-revenue
+	* avg-confirmation-time
+	* bitcoin-days-destroyed-cumulative
+	* bitcoin-days-destroyed
+	* bitcoin-days-destroyed-min-week
+	* bitcoin-days-destroyed-min-month
+	* bitcoin-days-destroyed-min-year
+	* blocks-size
+	* my-wallet-transaction-volume
+	* my-wallet-n-users
+	* my-wallet-n-tx
 
 * style is one of (see styles.json for predefined ones)
-	default	
-	btc-162x150
-	btc-250x165
-	btc-500x330
-	btc-700x450
-	orange-162x150
-	orange-250x165
-	orange-500x330
-	orange-700x450
-	blue-162x150
-	blue-250x165
-	blue-500x330
-	blue-700x450
-	(162x150 indicates the width in pixel)
+	* default	
+	* btc-162x150
+	* btc-250x165
+	* btc-500x330
+	* btc-700x450
+	* orange-162x150
+	* orange-250x165
+	* orange-500x330
+	* orange-700x450
+	* blue-162x150
+	* blue-250x165
+	* blue-500x330
+	* blue-700x450
+	* (162x150 indicates the width in pixel)
 
 * there are the following additional styling options (overriding the style):
-	width: pixel
-	height: pixel
-	curve_color: #RRGGBB
-	background_color: #RRGGBB
-	background_gradient: Start:#RRGGBB,End:#RRGGBB
-	title_font: fontfile.ttf,height_in_pixel,#RRGGBB
-	default_font: fontfile.ttf,height_in_pixel,#RRGGBB
-	x-axis-label-rotation: degrees
-	x-axis-date-format: format string for date (M.Y or Y, etc.)
-	graph-area: left,top,right,bottom (all in pixel)
-	label: Data curve legend
+	* width: pixel
+	* height: pixel
+	* curve_color: #RRGGBB
+	* background_color: #RRGGBB
+	* background_gradient: Start:#RRGGBB,End:#RRGGBB
+	* title_font: fontfile.ttf,height_in_pixel,#RRGGBB
+	* default_font: fontfile.ttf,height_in_pixel,#RRGGBB
+	* x-axis-label-rotation: degrees
+	* x-axis-date-format: format string for date (M.Y or Y, etc.)
+	* graph-area: left,top,right,bottom (all in pixel)
+	* label: Data curve legend
 	
         #RRGGBB is a hexadecimal color code red, green, blue from 00 to FF
 
 == Installation ==
 
-Requirements:
-  PHP 5.4+
-  cUrl
-  WordPress 3.5+
-  pChart2.1.4 (included in 3rdparty folder)
-  blockchain.info/charts (as service)
+= Requirements: =
+  * PHP 5.4+
+  * cUrl
+  * WordPress 3.5+
+  * pChart2.1.4 (included in 3rdparty folder)
+  * blockchain.info/charts (as service)
 
 == Changelog ==
 
