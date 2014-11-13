@@ -5,6 +5,7 @@ Requires at least: 3.5.0
 Tested up to: 4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Stable tag: trunk
 
 Displays bitcoin charts as widget with data from external services.
 
@@ -115,3 +116,15 @@ The shortcode is [btcchart style="btc-500x330" chart="trade-volume"]
 = 0.1.0 =
 
 initial release
+
+== Frequently Asked Questions ==
+
+Currently we don't have FAQs at hand.
+
+== Upgrade Notice ==
+
+Currently we don't have upgrade notices for you.
+
+== Screenshots ==
+
+For screenshots please have a look at the official website http://www.bitcoin-welt.com/
