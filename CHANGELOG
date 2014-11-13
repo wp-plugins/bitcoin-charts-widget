@@ -1,0 +1,8 @@
+0.3.6
+
+* remove wp-load.php include
+
+0.3.0
+
+* "title" option is now static text
+

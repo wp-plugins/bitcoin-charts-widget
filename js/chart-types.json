@@ -1,0 +1,226 @@
+{
+    "blockchain.info": {
+        "service-url": "http://blockchain.info/charts/$chart-type?format=json",
+        "label": "bitcoin-welt.com",
+        "image-href": "http://www.bitcoin-welt.com/",
+        "$chart-type": {
+            "total-bitcoins":
+                    {
+                        "label": "Total Bitcoins",
+                        "x-axis-label": null,
+                        "y-axis-label": "Mio. BTC",
+                        "y-zoom": 1000000
+                    },
+            "market-cap":
+                    {
+                        "label": "Market Capitalization",
+                        "x-axis-label": null,
+                        "y-axis-label": "Bio. USD",
+                        "y-zoom": 1000000000
+                    },
+            "transaction-fees":
+                    {
+                        "label": "Transaction Fees",
+                        "x-axis-label": null,
+                        "y-axis-label": "Transaction Fees (BTC)"
+                    },
+            "transaction-fees-usd":
+                    {
+                        "label": "Transaction Fees (USD)",
+                        "x-axis-label": null,
+                        "y-axis-label": "Transaction Fees (Tsd. USD)",
+                        "y-zoom": 1000
+                    },
+            "network-deficit":
+                    {
+                        "label": "Network Deficit per day",
+                        "x-axis-label": null,
+                        "y-axis-label": "Network Deficit (Mio. USD)",
+                        "y-zoom": 1000000
+                    },
+            "n-transactions":
+                    {
+                        "label": "Number of transactions per day",
+                        "x-axis-label": null,
+                        "y-axis-label": "Number of Transactions"
+                    },
+            "n-transactions-total":
+                    {
+                        "label": "Total Number of Transactions",
+                        "x-axis-label": null,
+                        "y-axis-label": "Million of transactions",
+                        "y-zoom": 1000000
+                    },
+            "n-transactions-excluding-popular":
+                    {
+                        "label": "Total Number of Transactions excl. Popular",
+                        "x-axis-label": null,
+                        "y-axis-label": "Thousands of Transactions",
+                        "y-zoom": 1000
+                    },
+            "n-unique-addresses":
+                    {
+                        "label": "Number of Unique Addresses used",
+                        "x-axis-label": null,
+                        "y-axis-label": "Thousands of Addresses",
+                        "y-zoom": 1000
+                    },
+            "n-transactions-per-block":
+                    {
+                        "label": "Number of Transactions per Block",
+                        "x-axis-label": null,
+                        "y-axis-label": "Transactions per Block"
+                    },
+            "n-orphaned-blocks":
+                    {
+                        "label": "Number of Orphaned Blocks",
+                        "x-axis-label": null,
+                        "y-axis-label": "Orphaned Blocks"
+                    },
+            "output-volume":
+                    {
+                        "label": "Total Output Volume",
+                        "x-axis-label": null,
+                        "y-axis-label": "Output Volume (Mio. BTC)",
+                        "y-zoom": 1000000
+                    },
+            "estimated-transaction-volume":
+                    {
+                        "label": "Estimated Transaction Volume",
+                        "x-axis-label": null,
+                        "y-axis-label": "Estimated Transaction Volume (Tsd. BTC)",
+                        "y-zoom": 1000
+                    },
+            "estimated-transaction-volume-usd":
+                    {
+                        "label": "Estimated Transaction Volume (USD)",
+                        "x-axis-label": null,
+                        "y-axis-label": "Estimated Transaction Volume (Mio. BTC)",
+                        "y-zoom": 1000000
+                    },
+            "trade-volume":
+                    {
+                        "label": "Trade Volume",
+                        "x-axis-label": null,
+                        "y-axis-label": "Trade Volume (Mio. USD)",
+                        "y-zoom": 1000000
+                    },
+            "tx-trade-ratio":
+                    {
+                        "label": "Transaction-Trade Ratio",
+                        "x-axis-label": null,
+                        "y-axis-label": "Ratio",
+                        "y-zoom": 1.0
+                    },
+            "market-price":
+                    {
+                        "label": "Market Price",
+                        "image-href": "http://www.bitcoin-welt.com/",
+                        "x-axis-label": null,
+                        "y-axis-label": "Price/USD"
+                    },
+            "cost-per-transaction-percent":
+                    {
+                        "label": "cost-per-transaction-percent",
+                        "x-axis-label": null,
+                        "y-axis-label": "y"
+                    },
+            "cost-per-transaction":
+                    {
+                        "label": "cost-per-transaction",
+                        "x-axis-label": null,
+                        "y-axis-label": "y"
+                    },
+            "hash-rate":
+                    {
+                        "label": "hash-rate",
+                        "x-axis-label": null,
+                        "y-axis-label": "y",
+                        "y-zoom": 1000000
+                    },
+            "difficulty":
+                    {
+                        "label": "Difficulty",
+                        "x-axis-label": null,
+                        "y-axis-label": "Difficulty (10^9)",
+                        "y-zoom": 1000000000
+                    },
+            "miners-revenue":
+                    {
+                        "label": "Miners Revenue",
+                        "x-axis-label": null,
+                        "y-axis-label": "Miners Revenue (Tsd. USD)",
+                        "y-zoom": 1000
+                    },
+            "avg-confirmation-time":
+                    {
+                        "label": "avg-confirmation-time",
+                        "x-axis-label": null,
+                        "y-axis-label": "y"
+                    },
+            "bitcoin-days-destroyed-cumulative":
+                    {
+                        "label": "bitcoin-days-destroyed-cumulative",
+                        "x-axis-label": null,
+                        "y-axis-label": "y"
+                    },
+            "bitcoin-days-destroyed":
+                    {
+                        "label": "bitcoin-days-destroyed",
+                        "x-axis-label": null,
+                        "y-zoom": 1000000,
+                        "y-axis-label": "Million Days Destroyed"
+                    },
+            "bitcoin-days-destroyed-min-week":
+                    {
+                        "label": "bitcoin-days-destroyed-min-week",
+                        "x-axis-label": null,
+                        "y-axis-label": "Days Destroyed"
+                    },
+            "bitcoin-days-destroyed-min-month":
+                    {
+                        "label": "bitcoin-days-destroyed-min-month",
+                        "x-axis-label": null,
+                        "y-axis-label": "Days Destroyed"
+                    },
+            "bitcoin-days-destroyed-min-year":
+                    {
+                        "label": "bitcoin-days-destroyed-min-year",
+                        "x-axis-label": null,
+                        "y-axis-label": "Days Destroyed"
+                    },
+            "blocks-size":
+                    {
+                        "label": "Blockchain Size",
+                        "x-axis-label": null,
+                        "y-axis-label": "GB",
+                        "y-zoom": 1000
+                    },
+            "avg-blocks-size":
+                    {
+                        "label": "Average block size",
+                        "x-axis-label": null,
+                        "y-axis-label": "Average block size/MB"
+                    },
+            "my-wallet-transaction-volume":
+                    {
+                        "label": "My Wallet Transaction Volume",
+                        "x-axis-label": null,
+                        "y-axis-label": "Transaction Volume (Tsd. BTC)",
+                        "y-zoom": 1000
+                    },
+            "my-wallet-n-users":
+                    {
+                        "label": "my-wallet-n-users",
+                        "x-axis-label": null,
+                        "y-axis-label": "User Count"
+                    },
+            "my-wallet-n-tx":
+                    {
+                        "label": "my-wallet-n-tx",
+                        "x-axis-label": null,
+                        "y-axis-label": "Number of Transactions"
+                    }
+        }
+    }
+}
