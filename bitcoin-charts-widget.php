@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Plugin Name: Bitcoin Charts Widget
  * Plugin URI: http://www.bitcoin-welt.com/
