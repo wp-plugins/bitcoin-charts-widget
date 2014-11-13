@@ -5,6 +5,8 @@ Tested up to: 4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Stable tag: trunk
+Plugin URI: http://www.bitcoin-welt.com/wordpress-plugin-bitcoin-charts-als-widget/
+Author URI: http://www.both-interact.com
 
 Displays bitcoin charts as widget with data from external services.
 
