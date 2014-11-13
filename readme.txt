@@ -1,5 +1,4 @@
 === Bitcoin Charts Widget ===
-Contributors: benda-both, kerstner-both
 Tags: bitcoin, charts, widget, bitcoin-welt, blockchain.info, service
 Requires at least: 3.5.0
 Tested up to: 4.0
@@ -12,11 +11,11 @@ Displays bitcoin charts as widget with data from external services.
 == Description ==
 
 This widget displays bitcoin charts with data from different external services. 
-Currently, the widget supports blockchain.info. 
+Currently, the widget supports blockchain.info but can be extended easily.
 
-The widget can be customized using the admin backend. 
+As usual, you can adjust the widget's settings to your taste through the admin backend. 
 
-Also, you can include the widget using shortcode.
+Additionally, you can include the widget using shortcode.
 
 = Short code =
 
@@ -88,12 +87,13 @@ The shortcode is [btcchart style="btc-500x330" chart="trade-volume"]
 
 == Installation ==
 
+In order to install and operate this widget the following requirements must be met.
+
 = Requirements: =
   * PHP 5.4+
   * cUrl
   * WordPress 3.5+
   * pChart2.1.4 (included in 3rdparty folder)
-  * blockchain.info/charts (as service)
 
 == Changelog ==
 
@@ -127,4 +127,4 @@ Currently we don't have upgrade notices for you.
 
 == Screenshots ==
 
-For screenshots please have a look at the official website http://www.bitcoin-welt.com/
+For screenshots please have a look at the official website (http://www.bitcoin-welt.com/)
