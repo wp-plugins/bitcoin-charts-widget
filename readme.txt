@@ -119,7 +119,11 @@ initial release
 
 == Frequently Asked Questions ==
 
-Currently we don't have FAQs at hand.
+= The plugin does not have a valid header = 
+
+If you receive this error message when trying to activate the plugin directly 
+after the installation please navigate back to the plugin list page and activate 
+the plugin from there.
 
 == Upgrade Notice ==
 
