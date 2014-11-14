@@ -24,8 +24,8 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-
 $btccharts_show_timings = false;
+
 class btccharts_Option {
 
     /** @var int $id  technical id */
@@ -168,9 +168,9 @@ function btccharts_render_chart($domain, $serviceId, $chartType, $settings) {
     $html .= "<div class='btcchart'>";
     $s = btccharts_style(array_merge($opts, $settings));
     $imgLink = $s['image-href'] ? $s['image-href'] : $service['image-href'];
-    
+
     $imgUrl = btccharts_render_chart_image(false, $domain, $serviceId, $chartType, $s);
-    
+
     $html .= "<div>";
     if ($imgLink)
         $html .= '<a href="' . htmlspecialchars($imgLink) . '">';
@@ -197,24 +197,24 @@ function btccharts_render_chart_image($writeToStdout, $domain, $serviceUrl, $cha
     $service = str_replace('$chart-type', $chartType, $serviceDesc['service-url']);
     $s = btccharts_style(array_merge($opts, $settings));
     $id = md5($domain . $chartType . serialize($s) . serialize($serviceDesc) . $cache_id);
-	user_error("btccharts_render_chart_image id ($id)", E_USER_WARNING);
+    //user_error("btccharts_render_chart_image id ($id)", E_USER_WARNING);
     $cached = get_transient("btccharts:$id");
     if (!is_null($cached) && strlen($cached) > 0) {
-    	if($writeToStdout) {
-	        $img = base64_decode($cached);
-	        if ($GLOBALS['btccharts_show_timings'])
-	            user_error("btccharts_render_chart_image from cache: t0=" . (microtime(true) - $t0), E_USER_WARNING);
-	        ob_end_clean();
-	        header("Expires: " . date('r', time() + $cache_timeout));
-	        header("Content-Type: image/png");
-	
-	        echo($img);
-	        return;
-    	} else {
-    		if ($GLOBALS['btccharts_show_timings'])
-    			user_error("btccharts_render_chart_image from cache: t0=" . (microtime(true) - $t0), E_USER_WARNING);
-    		return "data:image/png;base64,".$cached;
-    	}
+        if ($writeToStdout) {
+            $img = base64_decode($cached);
+            if ($GLOBALS['btccharts_show_timings'])
+                user_error("btccharts_render_chart_image from cache: t0=" . (microtime(true) - $t0), E_USER_WARNING);
+            ob_end_clean();
+            header("Expires: " . date('r', time() + $cache_timeout));
+            header("Content-Type: image/png");
+
+            echo($img);
+            return;
+        } else {
+            if ($GLOBALS['btccharts_show_timings'])
+                user_error("btccharts_render_chart_image from cache: t0=" . (microtime(true) - $t0), E_USER_WARNING);
+            return "data:image/png;base64," . $cached;
+        }
     }
 
     $t1 = microtime(true);
@@ -321,14 +321,14 @@ function btccharts_render_chart_image($writeToStdout, $domain, $serviceUrl, $cha
         "Style" => LEGEND_NOBORDER, "Mode" => LEGEND_HORIZONTAL)));
 
     /* Render the picture (choose the best way) */
-	$fn = tempnam(sys_get_temp_dir(), 'btccharts');
+    $fn = tempnam(sys_get_temp_dir(), 'btccharts');
     @$myPicture->render($fn);
     $img = file_get_contents($fn);
     if ($GLOBALS['btccharts_show_timings'])
         user_error("btccharts_render_chart_image image render: t=" . (microtime(true) - $t2), E_USER_WARNING);
     set_transient("btccharts:$id", base64_encode($img), $cache_timeout);
-    if(!$writeToStdout) {
-        $ret = "data:image/png;base64,".base64_encode($img);
+    if (!$writeToStdout) {
+        $ret = "data:image/png;base64," . base64_encode($img);
     } else {
         unlink($fn);
         ob_end_clean();
