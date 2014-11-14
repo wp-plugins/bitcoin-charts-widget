@@ -1,12 +1,17 @@
 <?php
 /**
  * Plugin Name: Bitcoin Charts Widget
- * Plugin URI: http://www.bitcoin-welt.com/
- * Description: Displays bitcoin charts as widget with data from external services.
+ * Plugin URI: http://www.bitcoin-welt.com/wordpress-plugin-bitcoin-charts-als-widget/
  * Author: Both Interact GmbH
  * Author URI: http://www.both-interact.com
  * Version: 0.3.6
+ * Tags: bitcoin, charts, widget, bitcoin-welt, blockchain.info, service
+ * Requires at least: 3.5.0
+ * Tested up to: 4.0
  * License: GPL2 or later
+ * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * Description: Displays bitcoin charts as widget using data from external 
+ *              services such as blockchain.info.
  *
  * Copyright 2014 Both Interact GmbH (office@both-interact.com)
  *
