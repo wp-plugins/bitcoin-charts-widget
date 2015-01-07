@@ -4,7 +4,7 @@
  * Plugin URI: http://www.bitcoin-welt.com/wordpress-plugin-bitcoin-charts-als-widget/
  * Author: Both Interact GmbH
  * Author URI: http://www.both-interact.com
- * Version: 0.3.7
+ * Version: 0.3.8
  * Tags: bitcoin, charts, widget, bitcoin-welt, blockchain.info, service
  * Requires at least: 3.5.0
  * Tested up to: 4.0
@@ -30,7 +30,7 @@
  */
 defined('ABSPATH') or die("No script kiddies please!");
 
-$btccharts_version = "0.3.7";
+$btccharts_version = "0.3.8";
 
 require_once 'php/chart.php';
 require_once 'php/activate.php';
