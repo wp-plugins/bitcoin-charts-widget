@@ -6,7 +6,7 @@ Author URI: http://www.both-interact.com
 Version: 0.3.8
 Tags: bitcoin, charts, widget, bitcoin-welt, blockchain.info, service
 Requires at least: 3.5.0
-Tested up to: 4.0
+Tested up to: 4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Stable tag: trunk
