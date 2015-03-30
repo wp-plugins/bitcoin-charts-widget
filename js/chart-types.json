@@ -1,6 +1,6 @@
 {
     "blockchain.info": {
-        "service-url": "http://blockchain.info/charts/$chart-type?format=json",
+        "service-url": "https://blockchain.info/charts/$chart-type?format=json",
         "label": "bitcoin-welt.com",
         "image-href": "http://www.bitcoin-welt.com/",
         "$chart-type": {
