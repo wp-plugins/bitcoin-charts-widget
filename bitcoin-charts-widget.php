@@ -4,10 +4,10 @@
  * Plugin URI: http://www.bitcoin-welt.com/wordpress-plugin-bitcoin-charts-als-widget/
  * Author: Both Interact GmbH
  * Author URI: http://www.both-interact.com
- * Version: 0.3.9
+ * Version: 0.4.0
  * Tags: bitcoin, charts, widget, bitcoin-welt, blockchain.info, service
  * Requires at least: 3.5.0
- * Tested up to: 4.0
+ * Tested up to: 4.2
  * License: GPL2 or later
  * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Description: Displays bitcoin charts as widget using data from external 
